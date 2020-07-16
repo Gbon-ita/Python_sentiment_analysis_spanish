@@ -1,0 +1,12 @@
+emoji==0.5.4
+Keras==2.3.1
+Keras-Applications==1.0.8
+Keras-Preprocessing==1.1.0
+nltk==3.4.4
+pandas==1.0.1
+pickleshare==0.7.5
+scikit-learn==0.21.2
+stop-words==2018.7.23
+tensorflow==2.2.0
+
+

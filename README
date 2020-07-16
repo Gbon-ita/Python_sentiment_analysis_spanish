@@ -1,0 +1,44 @@
+SENTIMENT ANALYSIS with MACHNE LEARNING on PYTHON
+
+Algorithms used: Support Vector Machine,  Neural Networks
+
+
+INTRO
+This project aims to classify different Spanish tweets in 4 class (Negative, Positive, Neutro, None)
+There are 5 python's codes:
+	1-SA_based_on_SVM
+	2-SA_based_on_NN
+	3-SA_SVM_classifier
+	4-SA_NN_classifier
+	5-my_emoji
+The first two implement the training part, using training.txt and development.txt, for the two different algorithms.
+The 3 and 4 implement the classification on the tweets collected in the test.txt file.
+The 5, my_emoji, implement an encoding for emoji
+MODELS
+The model offers the possibility to create the beg of words by including 2-grams and 3-grams
+therefore both codes, the SA_based_on_SVM.py and the SA_based_on_NN, give the possibility to choose as parameters the minimum number of repetitions on the training set for entering the word o n-grams under consideration in the beg of word.
+
+###numero minimo de ripeticiones### 
+freq_words=
+freq_2_grams=
+freq_3_grams=
+###################################
+
+The possibility of normalizing data through a scaler is included
+
+##############SCALER##############
+scal=True
+#scal=False
+
+
+SVM
+
+The support vector machine model performs a "one against all" classification, giving the possibility to use a different number of variables for the different models, allowing to optimize the result.
+therefore in the training phase it is necessary to train three distinct models by changing the value of the variable one_vs_all.
+
+PREDICT
+
+The prediction will be carried out with codes 3 and 4, creating the corresponding OUTPUT_SVM.txt and OUTPUT_NN.txt files
+
+
+
