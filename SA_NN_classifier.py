@@ -19,12 +19,12 @@ def create_bow(df,i,list_of_bow):
 	bow=pd.DataFrame(columns=list_of_bow[0]+list_of_bow[1]+list_of_bow[2],index=[0])
 
 	bow.fillna(value=0,inplace=True)
-
+	count=0
 	for w in tknzr.tokenize(df.loc[i,'tweet']):
 		w=w.lower()
 		if w in list_of_bow[0]:
 			bow.loc[0,w]+=1
-
+			count+=1
 	string=df.loc[i,'tweet'].lower()
 	list_grams=[]
 	for grams in ngrams(string.split(), 2):
@@ -32,7 +32,7 @@ def create_bow(df,i,list_of_bow):
 	for w in list_grams:  
 		if w in list_of_bow[1]:
 			bow.loc[0,w]+=1
-
+			count+=1
 	string=df.loc[i,'tweet'].lower()
 	list_grams=[]
 	for grams in ngrams(string.split(), 3):
@@ -40,6 +40,8 @@ def create_bow(df,i,list_of_bow):
 	for w in list_grams:  
 		if w in list_of_bow[2]:
 			bow.loc[0,w]+=1
+			count+=1
+	print('this prediction is based on {} variables'.format(count))
 	x=bow.values
 	return x
 
