@@ -5,7 +5,6 @@ Created by Giovanni E. Bonaventura
 
 NOTE:
 	This code performs the prediction in the order  NEU -> P -> N -> NONE
-	beacouse in this case it is the order that maximizes accuracy.
 	If you want to classify with another order, you need to change it.
 """
 
