@@ -33,7 +33,7 @@ scal=True
 
 SVM
 
-The support vector machine model performs a "one against all" classification, giving the possibility to use a different number of variables for the different models, allowing to optimize the result.
+The support vector machine model performs a "one vs all" classification, giving the possibility to use a different number of variables for the different models, allowing to optimize the result.
 therefore in the training phase it is necessary to train three distinct models by changing the value of the variable one_vs_all.
 
 PREDICT
